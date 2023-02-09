@@ -42,7 +42,7 @@ h1 {
 }
 .app:before {
   content: "";
-  background: url(../public//Lexa__4____landscape_sunset_dark_orange_sun_a_large__bea41c6c-5f61-40e4-8d3e-7e75beb3f7a7.png)
+  background: url(../public//img2.png)
     no-repeat center center/cover;
   position: absolute;
   width: 100%;
