@@ -4,10 +4,10 @@ import React, { useState } from "react";
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&imperial&appid=${process.env.REACT_APP_API}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${process.env.REACT_APP_API}`;
 
   const searchLocation = (event) => {
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
       axios.get(url).then((response) => {
         setData(response.data);
         console.log(response.data);
@@ -28,7 +28,7 @@ function App() {
         />
       </div>
 
-      {data.name != undefined && (
+      {data.name !== undefined && (
         <div className="container">
           <div className="top">
             <div className="lacation">
